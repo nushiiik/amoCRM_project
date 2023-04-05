@@ -1,0 +1,52 @@
+.advantages {
+  &__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    & span {
+      font-weight: 700;
+      background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    max-width: 295px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__list--mobile {
+    display: none;
+    @include tablet {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+  }
+  &__item--mobile {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    position: relative;
+    padding-left: 15px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 1px;
+      background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    }
+  }
+}
+

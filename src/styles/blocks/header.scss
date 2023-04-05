@@ -1,0 +1,40 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 46px;
+    margin-bottom: 90px;
+    padding: 11px 0 4px 0;
+    @include tablet {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 20px 10px;
+      justify-content: center;
+    }
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__logo-section {
+    margin-right: 45px;
+    @media screen and (max-width: 1080px) {
+      margin-right: 15px;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__desc {
+    max-width: 142px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+  }
+  &__right {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+

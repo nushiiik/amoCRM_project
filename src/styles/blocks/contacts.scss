@@ -1,0 +1,10 @@
+.contacts {
+  display: flex;
+  &__phone {
+    font-weight: 500;
+    margin-right: 45px;
+    @media screen and (max-width: 1080px) {
+      margin-right: 15px;
+    }
+  }
+}

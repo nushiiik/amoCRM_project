@@ -1,0 +1,49 @@
+.hero {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    @include tablet {
+      flex-direction: column;
+      gap: 45px;
+      padding: 40px 0 60px 0;
+      margin-bottom: 0;
+    }
+  }
+  &__left {
+    max-width: 450px;
+  }
+  &__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+    & span {
+      font-weight: 900;
+      background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @include tablet {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 70%;
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+    text-align: right;
+    @include tablet {
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+}

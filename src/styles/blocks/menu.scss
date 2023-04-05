@@ -1,0 +1,22 @@
+.menu {
+  &__list {
+    display: flex;
+    gap: 30px;
+    @media screen and (max-width: 1080px) {
+      gap: 15px;
+    }
+  }
+  &__item {
+    font-weight: 500;
+    @include tablet {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    &:last-child {
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+}
+

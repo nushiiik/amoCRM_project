@@ -1,0 +1,12 @@
+.button {
+  font-weight: 500;
+  padding: 20px 35px;
+  background-color: #4077F3;
+  transition: opacity .3s;
+  &:hover {
+    opacity: .8;
+  }
+  @include tablet {
+    display: none;
+  }
+}
